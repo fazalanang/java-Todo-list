@@ -2,7 +2,7 @@ public class aplikasiTodoList {
     public static String[] model = new String[10];
 
     public static void main(String[] args) {
-        testShowTodoList();
+        testAddTodoList();
     }
 
     /**
@@ -57,6 +57,13 @@ public class aplikasiTodoList {
                 break;
             }
         }
+    }
+
+    public static void testAddTodoList() {
+        for (int i = 0; i < 23; i++) {
+            addTodoList("Contoh Todo List ke- " + i );
+        }
+        showTodoList();
     }
 
     /**
