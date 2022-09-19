@@ -163,7 +163,15 @@ public class aplikasiTodoList {
      */
 
     public static void viewAddTodoList() {
+        System.out.println("MENAMBAH TODOLIST");
 
+        var todo = input("todo (x) jika batal");
+
+        if (todo.equals("x")) {
+            //Batal
+        }else {
+            addTodoList(todo);
+        }
     }
 
     /**
