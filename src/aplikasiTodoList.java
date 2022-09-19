@@ -1,3 +1,5 @@
+import com.sun.jdi.IntegerValue;
+
 import java.util.Objects;
 
 public class aplikasiTodoList {
@@ -186,6 +188,16 @@ public class aplikasiTodoList {
      * View menghapus todo list
      */
     public  static  void viewRemoveTodolist() {
+        System.out.println("MENGHAPUS TODO LIST");
+        var number = input ("Nomer yg di hapus (x jika batal)");
 
+        if (number.equals("x")) {
+            //Batal
+        } else {
+            boolean success = removeTodoList(Integer.valueOf(number));
+            if (!success) {
+                System.out.println("gagal menghapus todo list no : " + number);
+            }
+        }
     }
 }
