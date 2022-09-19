@@ -7,7 +7,7 @@ public class aplikasiTodoList {
     public static java.util.Scanner scanner = new java.util.Scanner(System.in);
 
     public static void main(String[] args) {
-        testViewRemoveTodoList();
+        viewShowTodoList();
     }
 
     /**
@@ -134,7 +134,7 @@ public class aplikasiTodoList {
             System.out.println("2). Hapus");
             System.out.println("x). keluar");
 
-            var input = input ("pilih");
+            var input = input ("Pilih");
 
             if (input.equals("1")) {
                 viewAddTodoList();
@@ -196,7 +196,7 @@ public class aplikasiTodoList {
         } else {
             boolean success = removeTodoList(Integer.valueOf(number));
             if (!success) {
-                System.out.println("gagal menghapus todo list no : " + number);
+                System.out.println("Todo list no :" + number + " tidak terdaftar.");
             }
         }
     }
